@@ -19,7 +19,7 @@
         android:layout_height="50dp"
         android:textSize="25sp"
         android:background="#FFF"
-        android:inputType="textCapCharacters|textAutoCorrect"
+        android:inputType="textAutoCorrect"
         android:textColor="#7f8c8d"
         android:layout_marginBottom="10dp"
         android:layout_centerVertical="true"/>
@@ -54,29 +54,41 @@
         android:text="How many points is your challenge worth?"
         android:id="@+id/textView" />
 
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
     <RadioButton
+        android:id="@+id/numPoints1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1"
-        android:id="@+id/numPoints1" />
+        />
 
     <RadioButton
+        android:id="@+id/numPoints2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2"
-        android:id="@+id/numPoints2" />
+        />
 
     <RadioButton
+        android:id="@+id/numPoints3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3"
-        android:id="@+id/numPoints3" />
+        />
 
     <RadioButton
+        android:id="@+id/numPoints4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="4"
-        android:id="@+id/numPoints4" />
+        />
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/submit_create_button"

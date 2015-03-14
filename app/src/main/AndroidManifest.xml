@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.teamhortons.nwhacksapp" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -32,5 +34,6 @@
     </application>
 
     <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="16" />
+
 
 </manifest>

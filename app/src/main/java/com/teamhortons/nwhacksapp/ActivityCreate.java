@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -79,7 +78,7 @@ public class ActivityCreate extends Activity {
                         numPoints = "2";
 
 
-                    //Go to _____ Page
+                    //Async Http
                     String url = "http://preview.layer7tech.com:8080/hacks/v1/appstates";
                     AsyncHttpClient client = new AsyncHttpClient();
                     client.setBasicAuth("team1", "1234567");
@@ -113,7 +112,7 @@ public class ActivityCreate extends Activity {
                     } catch (UnsupportedEncodingException e) {
                         e.printStackTrace();
                     }
-                    //JsonHttpResponseHandler handler = new JsonHttpResponseHandler();
+
                     Context currContext = getApplicationContext();
                     client.post(currContext, url, entity, "application/json", new AsyncHttpResponseHandler() {
                         @Override

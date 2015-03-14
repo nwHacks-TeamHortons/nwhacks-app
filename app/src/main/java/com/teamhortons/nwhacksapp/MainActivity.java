@@ -17,6 +17,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Button createButton = (Button) findViewById(R.id.create_button);
         createButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,8 +27,37 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(gotoCreate);
             }
         });
-    }
 
+        Button findButton = (Button) findViewById(R.id.find_button);
+        findButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //To change to a new activity, we do it with "Intents"
+                Intent gotoCreate = new Intent(getBaseContext(), ActivityFind.class);
+                startActivity(gotoCreate);
+            }
+        });
+
+        Button aboutButton = (Button) findViewById(R.id.about_button);
+        aboutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //To change to a new activity, we do it with "Intents"
+                Intent gotoCreate = new Intent(getBaseContext(), ActivityAbout.class);
+                startActivity(gotoCreate);
+            }
+        });
+        Button challengesButton = (Button) findViewById(R.id.challenges_button);
+        challengesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //To change to a new activity, we do it with "Intents"
+                Intent gotoCreate = new Intent(getBaseContext(), ActivityChallenges.class);
+                startActivity(gotoCreate);
+            }
+        });
+
+    }
 
         @Override
     public boolean onCreateOptionsMenu(Menu menu) {

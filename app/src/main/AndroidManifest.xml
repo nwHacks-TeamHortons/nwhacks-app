@@ -17,8 +17,18 @@
             </intent-filter>
         </activity>
         <activity android:name=".ActivityCreate"
-            android:label="ChatRoom">
+            android:label="CreateActivity">
         </activity>
+        <activity android:name=".ActivityChallenges"
+            android:label="ChallengesActivity">
+        </activity>
+        <activity android:name=".ActivityAbout"
+            android:label="AboutActivity">
+        </activity>
+        <activity android:name=".ActivityFind"
+            android:label="FindActivity">
+        </activity>
+
     </application>
 
     <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="16" />

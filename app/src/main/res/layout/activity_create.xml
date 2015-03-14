@@ -3,4 +3,92 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Challenge Title"
+        android:textSize="25sp"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/create_title_edittext"
+        android:layout_width="match_parent"
+        android:hint="Give your challenge a title"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_height="50dp"
+        android:textSize="25sp"
+        android:background="#FFF"
+        android:inputType="textCapCharacters|textAutoCorrect"
+        android:textColor="#7f8c8d"
+        android:layout_marginBottom="10dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Challenge Description"
+        android:textSize="25sp"
+        android:id="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/create_description_edittext"
+        android:layout_width="match_parent"
+        android:hint="Enter details about your challenge"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_height="200dp"
+        android:textSize="24sp"
+        android:background="#FFF"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:textColor="#7f8c8d"
+        android:layout_marginBottom="10dp"
+        android:layout_centerVertical="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="How many points is your challenge worth?"
+        android:id="@+id/textView" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/numPoints1" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:id="@+id/numPoints2" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:id="@+id/numPoints3" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:id="@+id/numPoints4" />
+
+    <Button
+        android:id="@+id/submit_create_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3D8766"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:text="SUBMIT"
+        android:clickable="true"/>
+
+
+
 </LinearLayout>

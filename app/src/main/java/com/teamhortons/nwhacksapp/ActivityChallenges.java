@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Erica on 2015-03-13.
+ * Created by Erica on 2015-03-13..
  */
 public class ActivityChallenges extends ActionBarActivity {
 

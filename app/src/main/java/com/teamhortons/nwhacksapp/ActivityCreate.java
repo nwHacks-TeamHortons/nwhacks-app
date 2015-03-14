@@ -23,19 +23,8 @@ public class ActivityCreate extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create);
 
-        Button submitButton = (Button) findViewById(R.id.submit_create_button);
-        submitButton.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                EditText titleEditText = (EditText) findViewById(R.id.create_title_edittext);
-                String challenge = create_title_edittext.getText().toString();
-                Intent gotoCreate = new Intent(getBaseContext(), ActivityCreate.class);
-                startActivity(gotoCreate);
-            }
-        });
     }
 }
 

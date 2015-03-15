@@ -30,7 +30,10 @@
         <activity android:name=".ActivityFind"
             android:label="FindActivity">
         </activity>
-
+        <activity android:name=".ShareDialog"
+            android:label="ShareDialog">
+            </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
 
     </application>
 

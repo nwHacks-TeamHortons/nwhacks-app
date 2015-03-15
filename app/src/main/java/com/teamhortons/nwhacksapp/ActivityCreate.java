@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.loopj.android.http.*;
@@ -62,10 +63,15 @@ public class ActivityCreate extends Activity {
                     userID = getPhoneID();
 
                     //Radio Button Handling
+                    RadioGroup radiogroup = new RadioGroup(getApplicationContext());
                     RadioButton numPointsOne = (RadioButton) findViewById(R.id.numPoints1);
                     RadioButton numPointsTwo = (RadioButton) findViewById(R.id.numPoints2);
                     RadioButton numPointsThree = (RadioButton) findViewById(R.id.numPoints3);
                     RadioButton numPointsFour = (RadioButton) findViewById(R.id.numPoints4);
+                    radiogroup.addView(numPointsOne);
+                    radiogroup.addView(numPointsTwo);
+                    radiogroup.addView(numPointsThree);
+                    radiogroup.addView(numPointsFour);
                     if (numPointsOne.isChecked()) {
                         numPoints = numPointsOne.getText().toString();
                     } else if (numPointsTwo.isChecked()) {

@@ -7,16 +7,36 @@
     tools:context="com.teamhortons.nwhacksapp.ActivityFind"
     tools:ignore="MergeRootFrame">
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Share to Facebook"
-        android:id="@+id/shareButton"
-        android:layout_gravity="center"
-        android:textColor="#fff"
-        android:background="@color/light_green"
-        android:visibility="visible"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ExpandableListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/completedChallenges"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share to Facebook"
+            android:id="@+id/shareButton"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:background="@color/light_green"
+            android:visibility="visible"/>
+    </LinearLayout>
 </FrameLayout>
 
 

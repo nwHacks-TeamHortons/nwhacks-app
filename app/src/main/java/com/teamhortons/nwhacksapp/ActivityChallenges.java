@@ -11,6 +11,8 @@ import android.widget.Button;
  */
 public class ActivityChallenges extends Activity {
 
+    private boolean shareBoolean = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,4 +28,6 @@ public class ActivityChallenges extends Activity {
             }
         });
     }
+
+
 }

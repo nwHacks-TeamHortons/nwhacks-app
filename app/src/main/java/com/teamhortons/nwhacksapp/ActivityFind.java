@@ -88,7 +88,7 @@ public class ActivityFind extends ActionBarActivity {
 
         public static List<Challenge> getData() {
             List<Challenge> data = new ArrayList<Challenge>();
-            for (int i = 0; i < 20 ; i++) {
+            for (int i = 0; i < 100 ; i++) {
                 Challenge current = new Challenge();
                 current.title = "Nice " + i;
                 current.iconid = R.drawable.abc_ic_menu_cut_mtrl_alpha;
